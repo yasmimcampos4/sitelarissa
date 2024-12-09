@@ -1,0 +1,195 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a; 
+    color: #e0e0e0; 
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background: rgba(15, 15, 15, 0.9);
+    color: #00aaff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    animation: fadeIn 1s ease-in;
+}
+
+
+#imagem {
+    height: 450px;
+    width: 100%;
+    background-image: url('gif1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 100px auto 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #0f0f0f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 170, 255, 0.3);
+    animation: fadeInUp 1s ease-out;
+}
+
+#secaovideo iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.6);
+}
+
+#titulovideo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#titulovideo h2 {
+    font-size: 1.8rem;
+    color: #00aaff;
+    margin-bottom: 10px;
+}
+
+#titulovideo p {
+    color: #cccccc;
+}
+
+#carrossel h2 {
+    color: #00d4ff;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 170, 255, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 212, 255, 0.5);
+}
+
+.seta {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00aaff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seta:hover {
+    background-color: #00aaff;
+}
+
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    color: #00aaff;
+    margin-top: 20px;
+}
+
+#footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00d4ff;
+}
+
+#footer p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#Robotica
+{
+    display: none;
+}
+
+.botao {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0px 10px;
+    background-color: #1C1C1C;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    background-color: #000000;
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 234, 255, 0.3);
+}
+
+
